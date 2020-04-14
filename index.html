@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TIC Acessibilidade</title>
+
+    <link rel='stylesheet' href='assets/fonts/font-awesome/css/font-awesome.css'>
+    <link rel='stylesheet' href='assets/css/oildexTheme.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body>
+    <a href="#content" class="sr-only" title="Vá direto para o conteúdo">Ir para o conteúdo</a>
+    <!-- Cabeçalho com logo Ceweb -->
+    <header>
+        <img class="logo-ceweb" src="assets/img/logoceweb-br.png" alt="Logo Ceweb.br">
+    </header>
+    <!-- / Cabeçalho com logo Ceweb -->
+
+
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <!-- Tab -->
+                <div class="tab">
+
+                    <!-- Navegação -->
+                    <nav>
+                        <ul class="nav nav-tabs">
+                            <li class="active ">
+                                <a href="#resumo" class="btn" data-toggle="tab">
+                                    <i class="fa fa-file-text fa-3x"></i>
+                                    Resumo
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#melhores-sites" class="btn" data-toggle="tab">
+                                    <i class="fa fa-thumbs-o-up fa-3x"></i>
+                                    10 Melhores
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sites-avaliados" class="btn" data-toggle="tab">
+                                    <i class="fa fa-star-o fa-3x"></i>
+                                    Sites Avaliados
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#d" class="btn" data-toggle="tab">
+                                    <i class="fa fa-times-circle-o fa-3x"></i>
+                                    Erros mais <br>comuns
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#sobre" class="btn" data-toggle="tab">
+                                    Sobre o Projeto
+
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- Navegação -->
+
+                    <!-- Conteúdo -->
+
+                    <section id="content" tabindex="-1" class="tab-content">
+
+                        <!-- Resumo Conteudo -->
+                        <div id="resumo" class="tab-pane active">
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 resumo-1">
+                                <h1>TIC Acessibilidade</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat purus
+                                    mauris,
+                                    vel convallis ante tempor nec. Vestibulum vehicula vulputate elit, vel sagittis
+                                    erat
+                                    rhoncus id. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                                    fames ac turpis egestas. Ut consectetur sit amet tellus vel rhoncus.</p>
+
+                                <a href="#" class="btn btn-resumo">Resumos Anteriores</a>
+                            </div>
+
+
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 resumo-2">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Percentual de <br>Conformidade</th>
+                                            <th>Sites</th>
+                                            <th>Páginas</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>95%</td>
+                                            <td>xx</td>
+                                            <td>xx</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>85% < 95%</td> <td>xx</td>
+                                            <td>xx</td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td>70% < 85%</td> <td>xx</td>
+                                            <td>xx</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                < 70%</td> <td>xx
+                                            </td>
+                                            <td>xx</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="card-resumo">
+                                    <p>28490</p>
+                                    <p>Sites avaliados</p>
+                                </div>
+                                <div class="card-resumo -last">
+                                    <p>1028399</p>
+                                    <p>Páginas avaliadas</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- / Resumo Conteudo -->
+
+
+
+                        <!-- 10 Melhores Conteudo -->
+                        <div id="melhores-sites" class="tab-pane">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+                                <div class="sites-grafico">
+                                    <div class="painel active" id="nota-avaliacao">
+
+                                        <img src="assets/img/tabela1.png" alt="">
+                                    </div>
+                                    <div class="painel" id="avisos">
+                                        <img src="assets/img/tabela1.png" alt="">
+
+                                    </div>
+                                    <div class="painel" id="erros">
+                                        <img src="assets/img/tabela1.png" alt="">
+                                    </div>
+                                    <ul class="sites-btn-group">
+                                        <li><a href="#nota-avaliacao" data-toggle="tab">Nota de Avaliação</a></li>
+                                        <li><a href="#avisos" data-toggle="tab">Avisos</a></li>
+                                        <li><a href="#erros" data-toggle="tab">Erros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="endereco-sites">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Endereço</th>
+                                                <th>Nota de Avaliação</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>http://siave.camaraavare.sp.gov.br/</td>
+                                                <td>45.05</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>camarasjriopardo.sp.gov.br/</td>
+                                                <td>45.51</td>
+                                            </tr>
+                                            <tr>
+                                                <td>https://auditoria.cgu.gov.br/</td>
+                                                <td>45.84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>https://auditoria.cgu.gov.br/</td>
+                                                <td>45.84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>https://auditoria.cgu.gov.br/</td>
+                                                <td>45.84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>https://auditoria.cgu.gov.br/</td>
+                                                <td>45.84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>https://auditoria.cgu.gov.br/</td>
+                                                <td>45.84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>https://auditoria.cgu.gov.br/</td>
+                                                <td>45.84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>https://auditoria.cgu.gov.br/</td>
+                                                <td>45.84</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- / 10 Melhores Conteudo -->
+
+
+                        <!-- Sites Avaliados    -->
+                        <div id="sites-avaliados" class="tab-pane">
+
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Endereço</th>
+                                            <th>Total de Páginas<br>Avaliadas</th>
+                                            <th>Nota de Avaliação</th>
+                                            <th>Erros</th>
+                                            <th>Avisos</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                        <!-- / Sites Avaliados    -->
+
+                        <div class="tab-pane" id="d"></div>
+                        <div id="sobre" class="tab-pane">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <h1>TIC Acessibilidade</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius, quam sed
+                                    sollicitudin lacinia, ante eros faucibus quam, at accumsan velit ante eget velit.
+                                    Phasellus eu ultricies leo, rutrum laoreet elit. Nunc vehicula diam a turpis porta,
+                                    at vehicula lacus semper. Fusce vehicula luctus dui. Curabitur molestie orci eu
+                                    massa vehicula, vitae viverra magna porttitor. Proin tincidunt risus id hendrerit
+                                    tristique. Maecenas in est tristique erat tempor mollis eget ac sapien. Vivamus
+                                    pulvinar elit sit amet ultricies mollis. Donec tortor diam, condimentum ut vehicula
+                                    non, ornare eget nisl. Donec ac mollis dolor, at semper ex. Nunc non semper diam.
+
+                                </p>
+                                <p>In pretium justo quis tortor ultricies, eget luctus augue volutpat. Pellentesque
+                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                    Vivamus quis erat id diam fermentum tempus. Proin nec dolor sit amet nulla aliquet
+                                    convallis. Vestibulum et est non magna pulvinar molestie in eget felis. Proin
+                                    finibus ligula tortor, at molestie nisl tincidunt id. Donec ut lectus sed lacus
+                                    semper mollis eget non justo. Pellentesque porttitor nunc ut metus viverra finibus
+                                    aliquet vitae tellus.
+
+                                </p>
+
+                                <h2>Metodologia</h2>
+                                <p>In pretium justo quis tortor ultricies, eget luctus augue volutpat. Pellentesque
+                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                                    Vivamus quis erat id diam fermentum tempus. Proin nec dolor sit amet nulla aliquet
+                                    convallis. Vestibulum et est non magna pulvinar molestie in eget felis. Proin
+                                    finibus ligula tortor, at molestie nisl tincidunt id. Donec ut lectus sed lacus
+                                    semper mollis eget non justo. Pellentesque porttitor nunc ut metus viverra finibus
+                                    aliquet vitae tellus.</p>
+                                <p>In laoreet est ac mauris fermentum, sodales convallis tellus lacinia. Nunc nisi elit,
+                                    dignissim quis dictum eu, maximus id eros. Nullam massa ex, porta sed pulvinar ut,
+                                    convallis laoreet nisl. Morbi lorem tellus, consequat sed vehicula non, tincidunt
+                                    non libero. Aliquam erat volutpat. Vivamus quis lorem nec lorem porttitor pulvinar
+                                    at dictum tortor. Curabitur magna dolor, ullamcorper quis urna at, iaculis sagittis
+                                    mauris.
+                                </p>
+                                <h2>Parceiros</h2>
+                            </div>
+
+                         
+
+                        </div>
+
+
+                    </section>
+                </div>
+                <!-- / Tab -->
+            </div>
+        </div>
+    </main>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src="js/main.js">
+
+//# sourceURL=pen.js
+    </script>
+</body>
+
+</html>
