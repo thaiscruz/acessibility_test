@@ -7,53 +7,56 @@
 
     <link rel='stylesheet' href='assets/fonts/font-awesome/css/font-awesome.css'>
     <link rel='stylesheet' href='assets/css/oildexTheme.css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <a href="#content" class="sr-only" title="Vá direto para o conteúdo">Ir para o conteúdo</a>
+
+    <!-- Link invisível para ir para conteúdo -->
+    <a href="#content" class="sr-only" title="Ir direto para o conteúdo">Ir para o conteúdo</a>
+    <!-- /Link invisível para ir para conteúdo -->
+
     <!-- Cabeçalho com logo Ceweb -->
     <header>
         <img class="logo-ceweb" src="assets/img/logoceweb-br.png" alt="Logo Ceweb.br">
     </header>
     <!-- / Cabeçalho com logo Ceweb -->
 
-
-
+    <p class="pull-right atualizacao"><small >Última coleta: 20/02/2020 - Última avaliação: 23/02/2020</small></p>
     <main class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
 
-                <!-- Tab -->
-                <div class="tab">
+                <!-- Painel Box-->
+                <div class="painel-box">
 
-                    <!-- Navegação -->
+                    <!-- Navegação Geral-->
                     <nav>
                         <ul class="nav nav-tabs">
-                            <li class="active ">
+                            <li class="active">
                                 <a href="#resumo" class="btn" data-toggle="tab">
-                                    <i class="fa fa-file-text fa-3x"></i>
+                                    <i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
                                     Resumo
                                 </a>
 
                             </li>
                             <li>
                                 <a href="#melhores-sites" class="btn" data-toggle="tab">
-                                    <i class="fa fa-thumbs-o-up fa-3x"></i>
+                                    <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
                                     10 Melhores
                                 </a>
                             </li>
                             <li>
                                 <a href="#sites-avaliados" class="btn" data-toggle="tab">
-                                    <i class="fa fa-star-o fa-3x"></i>
+                                    <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
                                     Sites Avaliados
                                 </a>
                             </li>
                             <li>
-                                <a href="#d" class="btn" data-toggle="tab">
-                                    <i class="fa fa-times-circle-o fa-3x"></i>
+                                <a href="#erros-comuns" class="btn" data-toggle="tab">
+                                    <i class="fa fa-times-circle-o fa-3x" aria-hidden="true"></i>
                                     Erros mais <br>comuns
                                 </a>
                             </li>
@@ -67,15 +70,16 @@
 
                         </ul>
                     </nav>
-                    <!-- Navegação -->
+                    <!-- / Navegação Geral-->
 
                     <!-- Conteúdo -->
+                    <div id="content" tabindex="-1" class="tab-content">
 
-                    <section id="content" tabindex="-1" class="tab-content">
-
-                        <!-- Resumo Conteudo -->
+                        <!-- Resumo -->
                         <div id="resumo" class="tab-pane active">
-                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 resumo-1">
+
+                            <!-- resumo texto -->
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 resumo-texto">
                                 <h1>TIC Acessibilidade</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc volutpat purus
                                     mauris,
@@ -86,16 +90,17 @@
 
                                 <a href="#" class="btn btn-resumo">Resumos Anteriores</a>
                             </div>
+                            <!-- / resumo texto -->
 
 
-                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 resumo-2">
-                                <table class="table table-striped">
+                            <!-- resumo tabela -->
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <table class="resumo-tabela table table-striped">
                                     <thead>
                                         <tr>
                                             <th>Percentual de <br>Conformidade</th>
                                             <th>Sites</th>
                                             <th>Páginas</th>
-
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -106,25 +111,30 @@
 
                                         </tr>
                                         <tr>
-                                            <td>85% < 95%</td> <td>xx</td>
+                                            <td>85% &lt; 95%</td>
+                                            <td>xx</td>
                                             <td>xx</td>
 
 
                                         </tr>
                                         <tr>
-                                            <td>70% < 85%</td> <td>xx</td>
+                                            <td>70% &lt; 85%</td>
+                                            <td>xx</td>
                                             <td>xx</td>
                                         </tr>
                                         <tr>
                                             <td>
-                                                < 70%</td> <td>xx
+                                                &lt; 70%</td>
+                                            <td>xx
                                             </td>
                                             <td>xx</td>
 
                                         </tr>
                                     </tbody>
                                 </table>
+                                <!-- resumo tabela -->
 
+                                <!-- cards -->
                                 <div class="card-resumo">
                                     <p>28490</p>
                                     <p>Sites avaliados</p>
@@ -133,45 +143,49 @@
                                     <p>1028399</p>
                                     <p>Páginas avaliadas</p>
                                 </div>
+                                <!-- / cards -->
+
                             </div>
 
                         </div>
-                        <!-- / Resumo Conteudo -->
+                        <!-- / Resumo -->
 
 
-
-                        <!-- 10 Melhores Conteudo -->
+                        <!-- 10 Melhores -->
                         <div id="melhores-sites" class="tab-pane">
+
+                            <!-- sites graficos -->
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-
-                                <div class="sites-grafico">
-                                    <div class="painel active" id="nota-avaliacao">
+                                <div class="sites-graficos">
+                                    <div id="nota-avaliacao" class="painel active">
 
                                         <img src="assets/img/tabela1.png" alt="">
                                     </div>
-                                    <div class="painel" id="avisos">
+                                    <div id="avisos" class="painel">
                                         <img src="assets/img/tabela1.png" alt="">
 
                                     </div>
-                                    <div class="painel" id="erros">
+                                    <div id="erros" class="painel">
                                         <img src="assets/img/tabela1.png" alt="">
                                     </div>
                                     <ul class="sites-btn-group">
-                                        <li><a href="#nota-avaliacao" data-toggle="tab">Nota de Avaliação</a></li>
+                                        <li class="active"><a href="#nota-avaliacao" data-toggle="tab">Nota de
+                                                Avaliação</a></li>
                                         <li><a href="#avisos" data-toggle="tab">Avisos</a></li>
                                         <li><a href="#erros" data-toggle="tab">Erros</a></li>
                                     </ul>
                                 </div>
                             </div>
+                            <!-- / sites graficos -->
 
+                            <!-- enderecos -->
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="endereco-sites">
+                                <div class="sites-enderecos">
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
                                                 <th>Endereço</th>
                                                 <th>Nota de Avaliação</th>
-
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -216,15 +230,29 @@
                                     </table>
                                 </div>
                             </div>
+                            <!-- enderecos -->
 
                         </div>
-                        <!-- / 10 Melhores Conteudo -->
+                        <!-- / 10 Melhores  -->
 
 
-                        <!-- Sites Avaliados    -->
+                        <!-- Sites Avaliados  -->
                         <div id="sites-avaliados" class="tab-pane">
 
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <!-- Campo de busca -->
+                                <div id="busca">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" class="pesquisar form-control" placeholder="Pesquisar">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-pesquisar" type="button">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- / Campo de busca -->
+
 
                                 <table class="table table-hover">
                                     <thead>
@@ -305,70 +333,201 @@
                                     </tbody>
                                 </table>
 
+                                <!-- paginação -->
+                                <div class="col-xs-12">
+                                <nav aria-label="Navegação entre as páginas de sites avaliados">
+                                    <ul class="pagination sites-paginacao">
+                                        <li>
+                                            <a href="#" aria-label="Anterior">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="active"><span>1</span></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        
+
+                                        <li>
+                                            <a href="#" aria-label="Próximo">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                </div>
+                                <!-- / paginação -->
+
                             </div>
 
                         </div>
-                        <!-- / Sites Avaliados    -->
+                        <!-- / Sites Avaliados -->
 
-                        <div class="tab-pane" id="d"></div>
+
+                        <!-- Erros mais comuns -->
+                        <div id="erros-comuns" class="tab-pane">
+
+                            <!-- navegação erros -->
+                            <nav  class="nav-erros" aria-label="Navegação entre os erros mais comuns">
+                                <ul class="nav nav-pills nav-stacked col-md-2">
+                                    <li class="active"><a href="#tab_marcacao" data-toggle="tab">Marcação</a></li>
+                                    <li><a href="#tab_formularios" data-toggle="tab">Formulários</a></li>
+                                    <li><a href="#tab_conteudo" data-toggle="tab">Conteúdo</a></li>
+                                    <li><a href="#tab_comportamento" data-toggle="tab">Comportamento</a></li>
+                                    <li><a href="#tab_apresentacao" data-toggle="tab">Apresentação</a></li>
+                                    <li><a href="#tab_multimidia" data-toggle="tab">Multímidia</a></li>
+                                </ul>
+                            </nav>
+                            <!-- / navegação erros -->
+
+                            <div class="tab-content col-md-10">
+                                <div class="tab-pane active" id="tab_marcacao">
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        <li>Sed id diam eget enim suscipit lacinia eget vitae magna.</li>
+                                        <li>Aliquam erat volutpat. Aliquam suscipit eu orci ac rhoncus.</li>
+                                        <li>Fusce sed velit ipsum. Nam vulputate euismod magna, eu convallis</li>
+                                        <li>Lacus facilisis consectetur. Suspendisse laoreet sed nisi ac viverra.
+                                            Pellentesque eget hendrerit massa.</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane" id="tab_formularios">
+                                    <ol>
+                                        <li>Sed id diam eget enim suscipit lacinia eget vitae magna.</li>
+                                        <li>Sed id diam eget enim suscipit lacinia eget vitae magna.</li>
+                                        <li>Aliquam erat volutpat. Aliquam suscipit eu orci ac rhoncus.</li>
+                                        <li>Fusce sed velit ipsum. Nam vulputate euismod magna, eu convallis</li>
+                                        <li>Lacus facilisis consectetur. Suspendisse laoreet sed nisi ac viverra.
+                                            Pellentesque eget hendrerit massa.</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane" id="tab_conteudo">
+                                    <ol>
+                                        <li>Aliquam erat volutpat. Aliquam suscipit eu orci ac rhoncus.</li>
+                                        <li>Sed id diam eget enim suscipit lacinia eget vitae magna.</li>
+                                        <li>Aliquam erat volutpat. Aliquam suscipit eu orci ac rhoncus.</li>
+                                        <li>Fusce sed velit ipsum. Nam vulputate euismod magna, eu convallis</li>
+                                        <li>Lacus facilisis consectetur. Suspendisse laoreet sed nisi ac viverra.
+                                            Pellentesque eget hendrerit massa.</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane" id="tab_comportamento">
+                                    <ol>
+                                        <li>Fusce sed velit ipsum. Nam vulputate euismod magna, eu convallis</li>
+                                        <li>Sed id diam eget enim suscipit lacinia eget vitae magna.</li>
+                                        <li>Aliquam erat volutpat. Aliquam suscipit eu orci ac rhoncus.</li>
+                                        <li>Fusce sed velit ipsum. Nam vulputate euismod magna, eu convallis</li>
+                                        <li>Lacus facilisis consectetur. Suspendisse laoreet sed nisi ac viverra.
+                                            Pellentesque eget hendrerit massa.</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane" id="tab_apresentacao">
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        <li>Sed id diam eget enim suscipit lacinia eget vitae magna.</li>
+                                        <li>Aliquam erat volutpat. Aliquam suscipit eu orci ac rhoncus.</li>
+                                        <li>Fusce sed velit ipsum. Nam vulputate euismod magna, eu convallis</li>
+                                        <li>Lacus facilisis consectetur. Suspendisse laoreet sed nisi ac viverra.
+                                            Pellentesque eget hendrerit massa.</li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane" id="tab_multimidia">
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                        <li>Sed id diam eget enim suscipit lacinia eget vitae magna.</li>
+                                        <li>Aliquam erat volutpat. Aliquam suscipit eu orci ac rhoncus.</li>
+                                        <li>Fusce sed velit ipsum. Nam vulputate euismod magna, eu convallis</li>
+                                        <li>Lacus facilisis consectetur. Suspendisse laoreet sed nisi ac viverra.
+                                            Pellentesque eget hendrerit massa.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Erros mais comuns -->
+
+
+                        <!-- Sobre o Projeto -->
                         <div id="sobre" class="tab-pane">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h1>TIC Acessibilidade</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius, quam sed
-                                    sollicitudin lacinia, ante eros faucibus quam, at accumsan velit ante eget velit.
-                                    Phasellus eu ultricies leo, rutrum laoreet elit. Nunc vehicula diam a turpis porta,
-                                    at vehicula lacus semper. Fusce vehicula luctus dui. Curabitur molestie orci eu
-                                    massa vehicula, vitae viverra magna porttitor. Proin tincidunt risus id hendrerit
-                                    tristique. Maecenas in est tristique erat tempor mollis eget ac sapien. Vivamus
-                                    pulvinar elit sit amet ultricies mollis. Donec tortor diam, condimentum ut vehicula
-                                    non, ornare eget nisl. Donec ac mollis dolor, at semper ex. Nunc non semper diam.
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius,
+                                    quam sed
+                                    sollicitudin lacinia, ante eros faucibus quam, at accumsan velit ante eget
+                                    velit.
+                                    Phasellus eu ultricies leo, rutrum laoreet elit. Nunc vehicula diam a turpis
+                                    porta,
+                                    at vehicula lacus semper. Fusce vehicula luctus dui. Curabitur molestie orci
+                                    eu
+                                    massa vehicula, vitae viverra magna porttitor. Proin tincidunt risus id
+                                    hendrerit
+                                    tristique. Maecenas in est tristique erat tempor mollis eget ac sapien.
+                                    Vivamus
+                                    pulvinar elit sit amet ultricies mollis. Donec tortor diam, condimentum ut
+                                    vehicula
+                                    non, ornare eget nisl. Donec ac mollis dolor, at semper ex. Nunc non semper
+                                    diam.
 
                                 </p>
-                                <p>In pretium justo quis tortor ultricies, eget luctus augue volutpat. Pellentesque
-                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                    Vivamus quis erat id diam fermentum tempus. Proin nec dolor sit amet nulla aliquet
-                                    convallis. Vestibulum et est non magna pulvinar molestie in eget felis. Proin
-                                    finibus ligula tortor, at molestie nisl tincidunt id. Donec ut lectus sed lacus
-                                    semper mollis eget non justo. Pellentesque porttitor nunc ut metus viverra finibus
+                                <p>In pretium justo quis tortor ultricies, eget luctus augue volutpat.
+                                    Pellentesque
+                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas.
+                                    Vivamus quis erat id diam fermentum tempus. Proin nec dolor sit amet nulla
+                                    aliquet
+                                    convallis. Vestibulum et est non magna pulvinar molestie in eget felis.
+                                    Proin
+                                    finibus ligula tortor, at molestie nisl tincidunt id. Donec ut lectus sed
+                                    lacus
+                                    semper mollis eget non justo. Pellentesque porttitor nunc ut metus viverra
+                                    finibus
                                     aliquet vitae tellus.
 
                                 </p>
 
                                 <h2>Metodologia</h2>
-                                <p>In pretium justo quis tortor ultricies, eget luctus augue volutpat. Pellentesque
-                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                                    Vivamus quis erat id diam fermentum tempus. Proin nec dolor sit amet nulla aliquet
-                                    convallis. Vestibulum et est non magna pulvinar molestie in eget felis. Proin
-                                    finibus ligula tortor, at molestie nisl tincidunt id. Donec ut lectus sed lacus
-                                    semper mollis eget non justo. Pellentesque porttitor nunc ut metus viverra finibus
+                                <p>In pretium justo quis tortor ultricies, eget luctus augue volutpat.
+                                    Pellentesque
+                                    habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                    egestas.
+                                    Vivamus quis erat id diam fermentum tempus. Proin nec dolor sit amet nulla
+                                    aliquet
+                                    convallis. Vestibulum et est non magna pulvinar molestie in eget felis.
+                                    Proin
+                                    finibus ligula tortor, at molestie nisl tincidunt id. Donec ut lectus sed
+                                    lacus
+                                    semper mollis eget non justo. Pellentesque porttitor nunc ut metus viverra
+                                    finibus
                                     aliquet vitae tellus.</p>
-                                <p>In laoreet est ac mauris fermentum, sodales convallis tellus lacinia. Nunc nisi elit,
-                                    dignissim quis dictum eu, maximus id eros. Nullam massa ex, porta sed pulvinar ut,
-                                    convallis laoreet nisl. Morbi lorem tellus, consequat sed vehicula non, tincidunt
-                                    non libero. Aliquam erat volutpat. Vivamus quis lorem nec lorem porttitor pulvinar
-                                    at dictum tortor. Curabitur magna dolor, ullamcorper quis urna at, iaculis sagittis
+                                <p>In laoreet est ac mauris fermentum, sodales convallis tellus lacinia. Nunc
+                                    nisi elit,
+                                    dignissim quis dictum eu, maximus id eros. Nullam massa ex, porta sed
+                                    pulvinar ut,
+                                    convallis laoreet nisl. Morbi lorem tellus, consequat sed vehicula non,
+                                    tincidunt
+                                    non libero. Aliquam erat volutpat. Vivamus quis lorem nec lorem porttitor
+                                    pulvinar
+                                    at dictum tortor. Curabitur magna dolor, ullamcorper quis urna at, iaculis
+                                    sagittis
                                     mauris.
                                 </p>
                                 <h2>Parceiros</h2>
                             </div>
-
-                         
-
                         </div>
+                        <!-- / Sobre o Projeto -->
 
+                    </div>
+                    <!-- / Conteúdo -->
 
-                    </section>
                 </div>
-                <!-- / Tab -->
+                <!-- / Painel Box-->
             </div>
         </div>
+
     </main>
+
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-    <script src="js/main.js">
-
-//# sourceURL=pen.js
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

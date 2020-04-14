@@ -1,0 +1,73 @@
+#sites-avaliados {
+  table {
+    width: 100%;
+    margin: 40px auto 30px auto;
+
+    thead tr th {
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 900;
+      color: #a3adb7;
+    }
+
+    tbody {
+      font-weight: 700;
+
+      tr:hover {
+        background: #F4E4E4;
+      }
+    }
+  }
+
+  nav .sites-paginacao {
+    width: 100%;
+    // padding: 0 380px;
+  }
+
+  nav .sites-paginacao > li > a,
+  nav .sites-paginacao > li > span {
+    color: #000;
+  }
+
+  nav .sites-paginacao > .active > a,
+  nav .sites-paginacao > .active > span,
+  nav .sites-paginacao > .active > a:hover,
+  nav .sites-paginacao > .active > span:hover,
+  nav .sites-paginacao > .active > a:focus,
+  nav .sites-paginacao > .active > span:focus {
+    color: #fff;
+    border-color: #ccc;
+    background-color: $orange;
+  }
+}
+
+#busca {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 0;
+  float: right;
+  width: 400px;
+
+  .pesquisar {
+    margin-bottom: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+
+  .btn-pesquisar {
+    border: 0;
+    background: none;
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    z-index: 3;
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: $orange;
+  }
+}
