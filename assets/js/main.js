@@ -1,21 +1,21 @@
 //Tab altura
-// var tabsFn = function () {
-//   function init() {
-//     setHeight();
-//   }
+var tabsFn = function () {
+  function init() {
+    setHeight();
+  }
 
-//   function setHeight() {
-//     var tabPane = $('.tab-pane'),
-//       tabsHeight = $('.nav-tabs').height();
+  function setHeight() {
+    var tabPane = $('.tab-pane'),
+      tabsHeight = $('.nav-tabs').height();
     
-//       tabPane.css({
-//         height: tabsHeight
-//       });
+      tabPane.css({
+        height: tabsHeight
+      });
 
     
-//   }
-//   $(init);
-// }();
+  }
+  $(init);
+}();
 
 // Active das tr das tabelas
 $(document).on('click', 'tbody tr', function (e) {
@@ -221,7 +221,7 @@ trTabelaSites.click(function () {
 
 
 // Quando vc clica na nav, tudo volta ao normal
-$(".nav-tabs").click(function () {
+$(".nav-tabs, .nav-mobile").click(function () {
   // console.log( "funcionando" );
 
   // O campo de busca aparece
