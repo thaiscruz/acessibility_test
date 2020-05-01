@@ -1,21 +1,19 @@
-//Tab altura
-// var tabsFn = function () {
-//   function init() {
-//     setHeight();
-//   }
+function init() {
+  if (window.screen.width >= 767) {
+    setHeight();
+  }
+}
 
-//   function setHeight() {
-//     var tabPane = $('.tab-pane'),
-//       tabsHeight = $('.nav-tabs').height();
-    
-//       tabPane.css({
-//         height: tabsHeight
-//       });
+function setHeight() {
+  var $tabPane = $('.tab-pane'),
+    tabsHeight = $('.nav-tabs').height();
 
-    
-//   }
-//   $(init);
-// }();
+  $tabPane.css({
+    height: tabsHeight
+  });
+}
+
+$(init);
 
 // Active das tr das tabelas
 $(document).on('click', 'tbody tr', function (e) {
