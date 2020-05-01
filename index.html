@@ -5,37 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TIC Acessibilidade</title>
-    <link rel='stylesheet' href='assets/fonts/font-awesome/css/font-awesome.css'>
-    <link rel='stylesheet' href='assets/css/oildexTheme.css'>
+    <title>TIC Web</title>
+    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/oildexTheme.css">
+    <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="assets/css/theme.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet"> -->
 
 </head>
 
 <body>
 
     <!-- Link invisível para ir para conteúdo -->
-    <a href="#content" class="sr-only" title="Ir direto para o conteúdo">Ir para o conteúdo</a>
+    <a href="#conteudo" class="sr-only" title="Ir direto para o conteúdo">Ir para o conteúdo</a>
     <!-- /Link invisível para ir para conteúdo -->
 
-    <!-- Cabeçalho com logo Ceweb -->
+    <!-- Logo Ceweb -->
     <header>
         <img class="logo-ceweb" src="assets/img/logoceweb-br.png" alt="Logo Ceweb.br">
     </header>
-    <!-- / Cabeçalho com logo Ceweb -->
+    <!-- / Logo Ceweb -->
 
-    <p class="pull-right atualizacao"><small>Última coleta: 20/02/2020 - Última avaliação: 23/02/2020</small></p>
+    <p class="atualizacao pull-right"><small>Última coleta: 20/02/2020 - Última avaliação: 23/02/2020</small></p>
+
     <main class="container-fluid">
         <div class="row">
             <div class="col-xs-12">
 
-                <!-- Painel Box-->
+                <!-- Painel Geral -->
                 <div class="painel-box">
 
                     <!-- Navegação Geral-->
-                    <nav>
-                        <ul class="nav nav-tabs">
+                    <!-- nav desktop -->
+                    <nav class="hidden-xs">
+                        <ul class="nav nav-tabs ">
                             <li class="active">
                                 <a href="#resumo" class="btn" data-toggle="tab">
                                     <i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
@@ -71,10 +74,43 @@
 
                         </ul>
                     </nav>
+                    <!-- /nav desktop -->
+
+                    <!-- nav mobile -->
+                    <nav class="visible-xs">
+                        <ul class="nav-mobile">
+                            <li class="active">
+                                <a href="#resumo" class="btn" data-toggle="tab">
+                                    <i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
+                                    Resumo
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="#melhores-sites" class="btn" data-toggle="tab">
+                                    <i class="fa fa-thumbs-o-up fa-3x" aria-hidden="true"></i>
+                                    10 Melhores
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#sites-avaliados" class="btn" data-toggle="tab">
+                                    <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
+                                    Sites Avaliados
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#erros-comuns" class="btn" data-toggle="tab">
+                                    <i class="fa fa-times-circle-o fa-3x" aria-hidden="true"></i>
+                                    Erros mais <br>comuns
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- nav mobile -->
                     <!-- / Navegação Geral-->
 
                     <!-- Conteúdo -->
-                    <div id="content" tabindex="-1" class="tab-content">
+                    <div id="conteudo" tabindex="-1" class="tab-conteudo">
 
                         <!-- Resumo -->
                         <div id="resumo" class="tab-pane active">
@@ -137,12 +173,16 @@
 
                                 <!-- cards -->
                                 <div class="card-resumo">
+                                    <a href="#sites-avaliados" onclick="menu3()" data-toggle="tab">
                                     <h2>28490</h2>
                                     <h3>Sites avaliados</h3>
+                                </a>
                                 </div>
-                                <div class="card-resumo -last">
+                                <div class="card-resumo -last" onclick="menu3()" data-toggle="tab">
+                                        <a href="#sites-avaliados">
                                     <h2>1028399</h2>
                                     <h3>Páginas avaliadas</h3>
+                                    </a>
                                 </div>
                                 <!-- / cards -->
 
@@ -158,16 +198,16 @@
                             <!-- sites graficos -->
                             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="sites-graficos">
-                                    <div id="nota-avaliacao" class="painel active">
+                                    <div id="nota-avaliacao" class="imagem-sites active">
 
-                                        <img src="assets/img/tabela1.png" alt="">
+                                        <img src="assets/img/tabela1.png" alt="...">
                                     </div>
-                                    <div id="avisos" class="painel">
-                                        <img src="assets/img/tabela1.png" alt="">
+                                    <div id="avisos" class="imagem-sites">
+                                        <img src="assets/img/tabela1.png" alt="...">
 
                                     </div>
-                                    <div id="erros" class="painel">
-                                        <img src="assets/img/tabela1.png" alt="">
+                                    <div id="erros" class="imagem-sites">
+                                        <img src="assets/img/tabela1.png" alt="...">
                                     </div>
                                     <ul class="sites-btn-group">
                                         <li class="active"><a href="#nota-avaliacao" data-toggle="tab">Nota de
@@ -239,12 +279,12 @@
 
                         <!-- Sites Avaliados  -->
                         <div id="sites-avaliados" class="tab-pane">
-
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <!-- Campo de busca -->
+                                <!-- campo de busca -->
                                 <div id="busca">
                                     <div class="input-group col-md-12">
-                                        <input type="text" class="pesquisar form-control" placeholder="Pesquisar" aria-label="Pesquisar">
+                                        <input type="text" class="pesquisar form-control" placeholder="Pesquisar"
+                                            aria-label="Pesquisar">
                                         <span class="input-group-btn">
                                             <button class="btn btn-pesquisar" type="button" aria-label="Pesquisar">
                                                 <i class="fa fa-search"></i>
@@ -252,10 +292,9 @@
                                         </span>
                                     </div>
                                 </div>
-                                <!-- / Campo de busca -->
-
-
-                                <table class="table table-hover">
+                                <!-- / campo de busca -->
+                                <!-- tabela sites -->
+                                <table  class="table tabela-sites tabela-1">
                                     <thead>
                                         <tr>
                                             <th>Endereço</th>
@@ -276,7 +315,23 @@
                                         </tr>
 
                                         <tr>
-                                            <td>http://siave.camaraavare.sp.gov.br/</td>
+                                            <td>http://www.edepar.pr.def.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>http://mapas.agricultura.gov.br/</td>
+                                            <td>X</td>
+                                            <td>45.05</td>
+                                            <td>X</td>
+                                            <td>X</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>https://auditoria.cgu.gov.br/</td>
                                             <td>X</td>
                                             <td>45.05</td>
                                             <td>X</td>
@@ -299,60 +354,33 @@
                                             <td>X</td>
                                         </tr>
 
-                                        <tr>
-                                            <td>http://siave.camaraavare.sp.gov.br/</td>
-                                            <td>X</td>
-                                            <td>45.05</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>http://siave.camaraavare.sp.gov.br/</td>
-                                            <td>X</td>
-                                            <td>45.05</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>http://siave.camaraavare.sp.gov.br/</td>
-                                            <td>X</td>
-                                            <td>45.05</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>http://siave.camaraavare.sp.gov.br/</td>
-                                            <td>X</td>
-                                            <td>45.05</td>
-                                            <td>X</td>
-                                            <td>X</td>
-                                        </tr>
-
+                                    
                                     </tbody>
                                 </table>
+                                <!-- tabela sites -->  
 
+                                <!-- resultado paginas -->
+                                <div class="resultado-paginas"></div>
+                                <!-- resultado paginas -->
+                                
                                 <!-- paginação -->
-                                <div class="col-xs-12">
+                                <div class="col-xs-12 navegacao">
+
                                     <nav aria-label="Navegação entre as páginas de sites avaliados">
-                                        <ul class="pagination sites-paginacao">
-                                            <li>
-                                                <a href="#" aria-label="Anterior">
+                                        <ul class="pagination">
+                                            <li><a href="#" aria-label="Anterior">
                                                     <span aria-hidden="true">&laquo;</span>
+
                                                 </a>
+
                                             </li>
-                                            <li class="active"><span>1</span></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
+                                            <li><a href="#" class="active">1</a></li>
+                                            <li> <a href="#">2</a></li>
+                                            <li> <a href="#">3</a></li>
 
 
-                                            <li>
-                                                <a href="#" aria-label="Próximo">
-                                                    <span aria-hidden="true">&raquo;</span>
-                                                </a>
-                                            </li>
+                                            <li><a href="#" aria-label="Próximo"><span
+                                                        aria-hidden="true">&raquo;</span></a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -519,16 +547,16 @@
                     <!-- / Conteúdo -->
 
                 </div>
-                <!-- / Painel Box-->
+                <!-- / Painel Geral -->
             </div>
         </div>
 
     </main>
 
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-    <script src="js/main.js"></script>
+    <!-- Arquivos Javascript -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
