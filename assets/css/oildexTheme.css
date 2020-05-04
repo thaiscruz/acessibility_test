@@ -2706,10 +2706,10 @@ tbody.collapse.in {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px dashed;
-  border-top: 4px solid \9;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  border-top: 8px dashed;
+  border-top: 6px solid \9;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
 }
 .dropup,
 .dropdown {
