@@ -1,3 +1,5 @@
+//Tab altura
+
 function init() {
   if (window.screen.width >= 767) {
     setHeight();
@@ -14,6 +16,8 @@ function setHeight() {
 }
 
 $(init);
+
+
 
 // Active das tr das tabelas
 $(document).on('click', 'tbody tr', function (e) {
