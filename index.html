@@ -23,7 +23,22 @@
     <!-- Logo Ceweb -->
     <header>
         <img class="logo-ceweb" src="assets/img/logoceweb-br.png" alt="Logo Ceweb.br">
+
+        <div class="visible-xs dropdown sobre-dropdown"> 
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                <li>
+                    <a href="#sobre" onclick="menu5()" data-toggle="tab">Sobre o projeto</a>
+                </li>
+            </ul>
+
+        </div>
     </header>
+
+
     <!-- / Logo Ceweb -->
 
     <p class="atualizacao pull-right"><small>Última coleta: 20/02/2020 - Última avaliação: 23/02/2020</small></p>
@@ -104,6 +119,7 @@
                                     Erros mais <br>comuns
                                 </a>
                             </li>
+
                         </ul>
                     </nav>
                     <!-- nav mobile -->
@@ -174,14 +190,14 @@
                                 <!-- cards -->
                                 <div class="card-resumo">
                                     <a href="#sites-avaliados" onclick="menu3()" data-toggle="tab">
-                                    <h2>28490</h2>
-                                    <h3>Sites avaliados</h3>
-                                </a>
+                                        <h2>28490</h2>
+                                        <h3>Sites avaliados</h3>
+                                    </a>
                                 </div>
                                 <div class="card-resumo -last" onclick="menu3()" data-toggle="tab">
-                                        <a href="#sites-avaliados">
-                                    <h2>1028399</h2>
-                                    <h3>Páginas avaliadas</h3>
+                                    <a href="#sites-avaliados">
+                                        <h2>1028399</h2>
+                                        <h3>Páginas avaliadas</h3>
                                     </a>
                                 </div>
                                 <!-- / cards -->
@@ -294,7 +310,7 @@
                                 </div>
                                 <!-- / campo de busca -->
                                 <!-- tabela sites -->
-                                <table  class="table tabela-sites tabela-1">
+                                <table class="table tabela-sites tabela-1">
                                     <thead>
                                         <tr>
                                             <th>Endereço</th>
@@ -354,15 +370,15 @@
                                             <td>X</td>
                                         </tr>
 
-                                    
+
                                     </tbody>
                                 </table>
-                                <!-- tabela sites -->  
+                                <!-- tabela sites -->
 
                                 <!-- resultado paginas -->
                                 <div class="resultado-paginas"></div>
                                 <!-- resultado paginas -->
-                                
+
                                 <!-- paginação -->
                                 <div class="col-xs-12 navegacao">
 
