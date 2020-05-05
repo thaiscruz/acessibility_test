@@ -8,7 +8,6 @@
     <title>TIC Web</title>
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/oildexTheme.css">
-    <script src="assets/js/main.js"></script>
     <link rel="stylesheet" href="assets/css/theme.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet"> -->
 
@@ -20,26 +19,26 @@
     <a href="#conteudo" class="sr-only" title="Ir direto para o conteúdo">Ir para o conteúdo</a>
     <!-- /Link invisível para ir para conteúdo -->
 
-    <!-- Logo Ceweb -->
-    <header>
-        <img class="logo-ceweb" src="assets/img/logoceweb-br.png" alt="Logo Ceweb.br">
 
-        <div class="visible-xs dropdown sobre-dropdown"> 
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+    <header>
+        <!-- logo ceweb -->
+        <img class="logo-ceweb" src="assets/img/logoceweb-br.png" alt="Logo Ceweb.br">
+        <!-- / logo ceweb -->
+
+        <!-- pagina sobre o projeto - mobile -->
+        <div class="visible-xs dropdown sobre-dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="true">
                 <span class="caret"></span>
             </button>
-            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
                 <li>
-                    <a href="#sobre" onclick="menu5()" data-toggle="tab">Sobre o projeto</a>
+                    <a href="#sobre" class="menu-sobre" data-toggle="tab">Sobre o projeto</a>
                 </li>
             </ul>
-
         </div>
+        <!-- / pagina sobre o projeto - mobile -->
     </header>
-
-
-    <!-- / Logo Ceweb -->
 
     <p class="atualizacao pull-right"><small>Última coleta: 20/02/2020 - Última avaliação: 23/02/2020</small></p>
 
@@ -53,7 +52,7 @@
                     <!-- Navegação Geral-->
                     <!-- nav desktop -->
                     <nav class="hidden-xs">
-                        <ul class="nav nav-tabs ">
+                        <ul class="nav nav-tabs">
                             <li class="active">
                                 <a href="#resumo" class="btn" data-toggle="tab">
                                     <i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
@@ -94,7 +93,7 @@
                     <!-- nav mobile -->
                     <nav class="visible-xs">
                         <ul class="nav-mobile">
-                            <li class="active">
+                            <li>
                                 <a href="#resumo" class="btn" data-toggle="tab">
                                     <i class="fa fa-file-text fa-3x" aria-hidden="true"></i>
                                     Resumo
@@ -119,6 +118,9 @@
                                     Erros mais <br>comuns
                                 </a>
                             </li>
+
+
+
 
                         </ul>
                     </nav>
