@@ -40,7 +40,7 @@ function bindClickTr( ){
 // Sempre que clicar em uma cara com propriedade "data-toogle=tab", ele chama a função tab para exibir o conteúdo
 function showTab() {
   $('.menu-sobre').click( function(e ){
-    $( ".tab-conteudo.active" ).removeClass( "active" );
+    $( ".teste.active" ).removeClass( "active" );
     $( "#sobre"  ).addClass( "active" );
   })
 }
